@@ -1,0 +1,48 @@
+
+body {
+
+	background-color: hsla(111, 32%, 33%, 1);
+	font-family: helvetica, arial, sans-serif
+
+	}
+div {
+
+		margin: 50px auto;
+		background-color: hsla(0, 0%, 100%, .5);
+		padding: 40px;
+		width: 300px;
+		border-radius: 8px;
+		box-shadow: 0 0 10px 1px hsla(0, 0%, 0%, .35);
+	}
+
+input {margin-bottom: 20px;
+		width: 60%;
+		padding: 5px;
+		font-size: 100%;
+		border-radius: 4px;
+	}
+
+label {
+	display: inline-block;
+	text-align: right;
+	float: left;
+	margin-top: 8px;
+	padding-right: 5px;
+	}
+
+input[type="submit"]{
+	width: 50%;	
+	font-size: 150%;
+	line-height: 2;
+	background-color: hsla(111, 32%, 33%, .25);
+	border-width: 1px;
+	border-style: solid;
+	border-color: hsla(111, 32%, 10%, 1);
+	margin-left: auto;
+	margin-right: auto;
+	display: block;cursor: 
+	}
+
+input[type="submit"]:hover {
+		color: white;
+	}
