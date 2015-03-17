@@ -1,0 +1,18 @@
+/* Pseudo Classes */
+:first-child
+:last-child
+:nth-child
+:first-of-type
+:last-of-type
+:nth-of-type
+
+:link
+:visited
+:hover
+:active
+:focus
+
+/*pseudo elements */
+
+::before
+::after

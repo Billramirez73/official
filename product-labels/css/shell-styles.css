@@ -1,0 +1,41 @@
+*,*:before, *:after{
+	box-sizing: order-box;
+	}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	}
+body{
+	background-color: red;
+	}
+header{
+	width: 66%;
+	float: left;
+	font-size: large;
+	;
+	}
+#logo{
+	float: left;	
+	background-color: white;
+	padding: 0px;
+	display: block;
+	width: 33%;
+	}
+#cnf{
+	float: right;
+	width: 33%;
+	}
+div{
+	font-size: 20px;
+	background-color: orange;
+	width: 66%;
+	}
+p {
+	float: left;
+	text-align: center;
+	width: 33%
+
+
+	}	
