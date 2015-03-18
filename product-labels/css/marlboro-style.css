@@ -10,6 +10,8 @@
 }
 #wrapper{
 	width: 400px;
+	margin: 25px auto;
+	box-shadow: 0 0 25px 0 hsla(0, 0%, 0%, .30)
 }
 header{
 	background-color: hsla(357, 87%, 43%, 1);
@@ -29,19 +31,41 @@ header h2{
 	padding: 10px 0;
 	letter-spacing: 2px;
 }
+main::before,
+main::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	
+	border-style: solid;
+	border-width: 100px
+}
+main::before{
+	left: 0;
+	border-color: hsla(357, 87%, 43%, 1) 
+	transparent transparent hsla(357, 87%, 43%, 1);
+}
+main::after{
+	right: 0;
+	border-color: hsla(357, 87%, 43%, 1) 
+	hsla(357, 87%, 43%, 1) transparent transparent;
+}
 main{
 	border-bottom: 10px solid hsla(357, 87%, 43%, 1);
-	
+	overflow: hidden;
+	position: relative;
 }
 main img{
 	width: 25%;
 	display: block;
-	margin: 0 auto;
+	margin: 125px auto 0;
+	
 }
 main h1{
 	font-size: 105px;
 	font-family: "unna", sans-serif;
-
+	margin: 25px 0;
 }
 main h3{
 	font-size: 20px;
