@@ -1,1 +1,93 @@
-body{background-color: red}
+*,*::before,
+*::after{
+	box-sizing: border-box;
+}
+.clearfix::before,
+.clearfix::after {
+		content: "";
+		display: block;
+		clear: both;
+}
+body{
+	color: white;
+	background: radial-gradient(#1A7CBE,#1D3B6C);
+	background-repeat: no-repeat;
+	
+}
+#oz{
+	margin-bottom: 0;
+	font-size: 20px;
+}
+
+#purified{
+	font-size: 20px;
+	position: absolute;
+	margin-top: -23px;
+  	margin-left: 205px;
+}
+
+#ml{
+	font-size: 12px;
+	position: absolute;
+	margin-top: 0;
+
+}
+#logo1{
+	
+}
+
+
+#purified{
+	
+}
+#nutrition{
+	border-width: 2px;
+	border-color: hsla(0, 0%, 100%, 1);
+	border-style: solid;
+	width: 410px;
+	height: 78px;
+	padding: 5px;
+	font-size: 13px;
+	margin-left: 75px;
+}
+.blue{
+	color: #659ECC;
+}
+#info{
+	font-size: 10px;
+}
+#blue::first-line{
+	color: white;
+}
+#blue{
+	text-align: left;
+	margin-left: 80px;
+}
+#free{
+	font-weight: bold;
+}
+#first{
+	width: 33%;
+	float: left;
+}
+#second{
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+#third{
+	width: 33%;
+	float: right;
+	line-height: 12px;
+	margin-left: 100px;
+}
+#upc{
+	float: right;
+	margin-bottom: 10px;
+}
+#logo2{
+	margin-left: 70px;
+	padding: 5px 5px 5px 0;
+}
+
+}
