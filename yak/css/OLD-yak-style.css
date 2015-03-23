@@ -1,0 +1,73 @@
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+html,body{
+	height: 100%;
+	margin: 0;
+}
+/*lay css start*/
+main{
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+}
+#friends{
+	width: 250px;
+	height: 100%;
+	background-color: teal;
+
+	float: left;
+}
+
+#messages{
+	height: 100%;
+	margin-left: 250px;
+	background-color: orange;
+
+}
+#messagebox{
+	height: 40px;
+	width: 100%;
+	background-color: grey;
+}
+/*lay css fin*/
+/* friends list start*/
+#friends ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#friends ul li{
+	padding: 5px;
+	border-bottom: 1px solid black;
+}
+#friends ul li img{
+	width: 50px;
+	float: left;
+	border-radius: 50%;
+}
+#friends ul li div:first-of-type{
+	width: 150px;
+	float: left;
+	padding-left: 10px;
+}
+#friends ul li div:first-of-type h2{
+	margin: 0;
+	font-size: 17px;
+}
+#friends ul li div:first-of-type h3{
+	margin: 0;
+	font-size: 10px;
+}
+#friends ul li div div:last-of-type{
+	width: 30px;
+	float: left;
+}
+
+/*friend list fin*/

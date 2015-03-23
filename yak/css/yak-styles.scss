@@ -1,0 +1,14 @@
+$color: blue;
+$padding: 20;
+
+body{
+	background: linear-gradient(red, blue);
+	color: $color;
+}
+
+#friends{
+	li{
+		background-color: desaturate(red, 40);
+		padding: $padding+px;
+	}
+}

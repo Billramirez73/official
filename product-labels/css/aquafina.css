@@ -79,15 +79,20 @@ body{
 	width: 33%;
 	float: right;
 	line-height: 12px;
-	margin-left: 100px;
 }
 #upc{
 	float: right;
 	margin-bottom: 10px;
 }
 #logo2{
-	margin-left: 70px;
-	padding: 5px 5px 5px 0;
+	margin-left: 157px;
+	padding: 25px 5px 5px 0;
 }
-
+#smart{
+	
+}
+.pics {
+padding: 5px;
+width: 20%;
+margin-left: 20px;
 }
