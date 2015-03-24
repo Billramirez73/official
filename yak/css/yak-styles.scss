@@ -1,14 +1,32 @@
-$color: blue;
-$padding: 20;
+@import "reset";
 
 body{
-	background: linear-gradient(red, blue);
-	color: $color;
-}
+	background-color: grey;
 
+}
 #friends{
-	li{
-		background-color: desaturate(red, 40);
-		padding: $padding+px;
+	width: 250px;
+	
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	li::before,
+	li::after{
+		@extend %clearfix;
+	}
+
+	img{
+		width: 50px;
+		float: left;
+	}
+	li div:first-of-type{
+		width: 150px;
+		float: left;
+	}
+	li div:last-of-type{
+		width: 50px;
+		float: left;
 	}
 }
+		

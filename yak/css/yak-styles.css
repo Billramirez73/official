@@ -1,1 +1,1 @@
-body{background:linear-gradient(red, blue);color:blue}#friends li{background-color:#cc3333;padding:20px}
+*,*::befor,*::after{box-sizing:border-box}.clearfix::before,.clearfix::after{content:"";display:block;clear:both}#friends li::before,#friends li::after{content:"";display:block;clear:both}body{background-color:grey}#friends{width:250px}#friends ul{margin:0;padding:0}#friends img{width:50px;float:left}#friends li div:first-of-type{width:150px;float:left}#friends li div:last-of-type{width:50px;float:left}

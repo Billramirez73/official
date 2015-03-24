@@ -1,0 +1,15 @@
+*,*::befor,*::after{
+	box-sizing: border-box;
+}
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}	
+
+%clearfix{
+	content: "";
+	display: block;
+	clear: both;
+}
