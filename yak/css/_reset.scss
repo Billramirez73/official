@@ -1,15 +1,26 @@
 *,*::befor,*::after{
 	box-sizing: border-box;
 }
-.clearfix::before,
+/*.clearfix::before,
 .clearfix::after{
 	content: "";
 	display: block;
 	clear: both;
-}	
+}*/
 
 %clearfix{
 	content: "";
 	display: block;
 	clear: both;
 }
+
+/*%message{
+	height: 100%;
+	margin-left: 250px;
+}
+
+%border{ 
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-color: black;
+}*/

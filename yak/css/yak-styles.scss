@@ -1,16 +1,53 @@
+//$color2: hsla(200, 30%, 75%, 1);
+//$size: 30%;
+
 @import "reset";
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
+$base-color: hsla(150, 20%, 25%, 1);
+$light-base: lighten($base-color, 50%);
+$dark-base: darken($base-color, 50%);
+$white-base: lighten(grayscale($base-color), 70%);
+$black-base: darken(grayscale($base-color), 30%);
+$comp_base: complement($base-color);
+
+%bordering{
+	border-width: 2px;
+	border-style: solid;
+	border-color: $black-base;
+}
+
+html, body{
+	height: 100%;
+	margin: 0;
+}
 body{
-	background-color: grey;
-
+	//background-color: mix($color1, $color2, 80%);
+	//color: invert(mix($color1, $color2, 80%));
+	
 }
 #friends{
-	width: 250px;
-	
+	width: 254px;
+	float: left;
+	//background-color: saturate($color2, 40%);
+		
 	ul{
 		margin: 0;
 		padding: 0;
+		list-style: none;
+
 	}
+	li{
+		@extend %bordering;
+		padding: 3px;
+		background-image: linear-gradient($light-base, $dark-base);
+		color: $white-base;
+		
+		&.active{
+		background-image: linear-gradient($base-color, $light-base);
+		}
+	}
+
 	li::before,
 	li::after{
 		@extend %clearfix;
@@ -19,14 +56,56 @@ body{
 	img{
 		width: 50px;
 		float: left;
+		@extend %bordering;
+		border-radius: 50%;
+		margin-right: 5px;
 	}
+	h2, h3{
+		margin: 0;
+		font-size: 16px;
+		font-family: sans-serif;
+	}
+	h2{
+		font-weight: 900;
+	}
+	h3{
+		font-weight: 100;
+		font-style: italic;
+	}
+	
 	li div:first-of-type{
 		width: 150px;
 		float: left;
 	}
 	li div:last-of-type{
-		width: 50px;
-		float: left;
+		float: right;
+	}
+	button{
+		@extend %bordering;
+		background-color: $light-base;
+		margin: 5px;
+		border-radius: 4px;
+	}
+	#active{
+
+	}
+
+}
+#message{
+	height: 100%;
+	//@extend %message;
+}
+
+
+main{
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+
+	#messagebox{
+		height: 40px;
+		width: 100%;
+		//background-color: saturate($color2, $size);
 	}
 }
 		
