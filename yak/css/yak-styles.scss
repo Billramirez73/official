@@ -17,6 +17,15 @@ $comp_base: complement($base-color);
 	border-color: $black-base;
 }
 
+@mixin border-mixin($width, $style, $black){
+	border-width: $width;
+	border-style: $style;
+	border-color: $black;
+}
+@mixin gradient($base1, $base2){
+	background-image: linear-gradient($base1, $base2);
+}
+
 html, body{
 	height: 100%;
 	margin: 0;
@@ -30,7 +39,7 @@ body{
 	width: 254px;
 	float: left;
 	//background-color: saturate($color2, 40%);
-		
+
 	ul{
 		margin: 0;
 		padding: 0;
@@ -39,12 +48,15 @@ body{
 	}
 	li{
 		@extend %bordering;
+	//	@include border-mixin(5px, dashed, green);
 		padding: 3px;
-		background-image: linear-gradient($light-base, $dark-base);
+		//background-image: linear-gradient($light-base, $dark-base);
 		color: $white-base;
+		@include gradient($light-base, $dark-base );
 		
 		&.active{
-		background-image: linear-gradient($base-color, $light-base);
+			//background-image: linear-gradient($base-color, $light-base);
+			@include gradient($base-color, $light-base );
 		}
 	}
 
@@ -57,6 +69,7 @@ body{
 		width: 50px;
 		float: left;
 		@extend %bordering;
+		//@include border-mixin(10px, dotted, red);
 		border-radius: 50%;
 		margin-right: 5px;
 	}
@@ -82,15 +95,20 @@ body{
 	}
 	button{
 		@extend %bordering;
+		//@include border-mixin(5px, double, orange);
 		background-color: $light-base;
 		margin: 5px;
 		border-radius: 4px;
+		transition: 1s, background-color 1s, transform 1s;
 	}
-	#active{
+	button:hover{
+		background-color:  $dark-base;
+		transform: skew(45deg), ;
 
 	}
 
-}
+	}
+
 #message{
 	height: 100%;
 	//@extend %message;
@@ -108,4 +126,32 @@ main{
 		//background-color: saturate($color2, $size);
 	}
 }
-		
+/*lor1: hsla(590, 50%, 50%, 1);
+$color2: lighten($color1, 20%);
+$color3: darken($color1, 50%);
+
+%lettering{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: $color2; 
+	font-style: Courier New, Courier, monospace;
+}
+#test{
+	@extend %lettering;
+	width: 100px;
+	height: 50px;
+	margin: 0, auto;
+	background-image: linear-gradient($color1, $color3);
+	border-width: 3px;
+	border-radius: 20px;
+	transition:width 2s, height 2s, background-color 2s, transform 2s;
+}
+#test:hover{
+	width:100px;
+    height:50px;
+    transform:rotate(360deg);
+    color: white;
+}
+*/
+

@@ -1,1 +1,139 @@
-@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);*,*::befor,*::after{box-sizing:border-box}#friends li::before,#friends li::after{content:"";display:block;clear:both}#friends li,#friends img,#friends button{border-width:2px;border-style:solid;border-color:black}html,body{height:100%;margin:0}#friends{width:254px;float:left}#friends ul{margin:0;padding:0;list-style:none}#friends li{padding:3px;background-image:linear-gradient(#b3ccbf, #000000);color:#f2f2f2}#friends li.active{background-image:linear-gradient(#334d40, #b3ccbf)}#friends img{width:50px;float:left;border-radius:50%;margin-right:5px}#friends h2,#friends h3{margin:0;font-size:16px;font-family:sans-serif}#friends h2{font-weight:900}#friends h3{font-weight:100;font-style:italic}#friends li div:first-of-type{width:150px;float:left}#friends li div:last-of-type{float:right}#friends button{background-color:#b3ccbf;margin:5px;border-radius:4px}#message{height:100%}main{width:80%;margin:0 auto;height:100%}main #messagebox{height:40px;width:100%}
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+*, *::befor, *::after {
+  box-sizing: border-box;
+}
+
+/*.clearfix::before,
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}*/
+#friends li::before,
+#friends li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*%message{
+	height: 100%;
+	margin-left: 250px;
+}
+
+%border{ 
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-color: black;
+}*/
+#friends li, #friends img, #friends button {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#friends {
+  width: 254px;
+  float: left;
+}
+#friends ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#friends li {
+  padding: 3px;
+  color: #f2f2f2;
+  background-image: linear-gradient(#b3ccbf, black);
+}
+#friends li.active {
+  background-image: linear-gradient(#334d40, #b3ccbf);
+}
+#friends img {
+  width: 50px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#friends h2, #friends h3 {
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#friends h2 {
+  font-weight: 900;
+}
+#friends h3 {
+  font-weight: 100;
+  font-style: italic;
+}
+#friends li div:first-of-type {
+  width: 150px;
+  float: left;
+}
+#friends li div:last-of-type {
+  float: right;
+}
+#friends button {
+  background-color: #b3ccbf;
+  margin: 5px;
+  border-radius: 4px;
+  transition: 1s, background-color 1s, -webkit-transform 1s;
+  transition: 1s, background-color 1s, transform 1s;
+}
+#friends button:hover {
+  background-color: black;
+  -webkit-transform: skew(45deg);
+      -ms-transform: skew(45deg);
+          transform: skew(45deg);
+}
+
+#message {
+  height: 100%;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+main #messagebox {
+  height: 40px;
+  width: 100%;
+}
+
+/*lor1: hsla(590, 50%, 50%, 1);
+$color2: lighten($color1, 20%);
+$color3: darken($color1, 50%);
+
+%lettering{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: $color2; 
+	font-style: Courier New, Courier, monospace;
+}
+#test{
+	@extend %lettering;
+	width: 100px;
+	height: 50px;
+	margin: 0, auto;
+	background-image: linear-gradient($color1, $color3);
+	border-width: 3px;
+	border-radius: 20px;
+	transition:width 2s, height 2s, background-color 2s, transform 2s;
+}
+#test:hover{
+	width:100px;
+    height:50px;
+    transform:rotate(360deg);
+    color: white;
+}
+*/
+
+/*# sourceMappingURL=yak-styles.css.map */

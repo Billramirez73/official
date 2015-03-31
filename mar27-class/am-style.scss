@@ -1,0 +1,167 @@
+$color1: hsla(200, 50%, 50%, 1);
+$color2: lighten($color1, 10%);
+$color3: darken($color1, 30%);
+$color4: transparentize($color1, .25);
+$color5: complement($color2);
+
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+%clearfix{
+	content: "";
+	display: block;
+	clear: both;
+}
+%borders{
+	border-width: 2px;
+	border-style: solid;
+	
+}
+%font{
+	font-size: 30px;
+	color: black;
+	font-style: new times roman;
+
+}
+//start css
+
+body, html {
+	margin: 0 auto;
+	min-height: 100vh;
+	@extend %clearfix;
+	background-color: hsla(100, 0%, 10%, 1);
+}
+
+main{
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+
+	@extend %clearfix;
+}
+
+header{
+	margin: 10px auto 0px;
+	width: 100%;
+	background-color: $color3;
+	border-radius: 10px;
+	padding-left: 10px;
+	h1{
+		font-family: 'Lobster';
+		font-size: 50px;
+		color: white;
+		float: left;
+		margin: 15px;
+	}
+	img{
+		
+	}
+}
+nav {
+
+	ul{
+		list-style: none;
+
+		li{
+			background-color: $color1;
+			display: inline-block;
+			border-style: solid;
+			border-color: $color3;
+			border-width: 1px;
+			width: 100px;
+			height: 30px;
+			text-align: center;
+			border-radius: 0px 0px 5px 5px;
+			margin: 0;
+
+
+			a{
+				color: $color3;
+				text-decoration: none;
+			}
+			
+			
+
+		}
+	}
+}		
+
+	
+div:first-of-type{
+	background-color: $color4;
+	min-height: 100vh;
+	float: left;
+	width: 25%;
+	display: inline-block;
+	@extend %borders;
+	text-align: center;
+	list-style: none;
+	padding: 10px;
+	border-radius: 10px 0 0 10px;
+
+
+
+
+	li{
+		
+		a{
+		color: $color3;
+		text-decoration: none;
+		@extend %borders;
+		width: 75%;
+		height: 30px;
+		text-decoration: none;
+		background-color: $color4;
+		border-radius: 10px;
+		list-style: none;
+		padding: 5px;
+		display: inline-block;
+		}
+		a:hover{
+			color: white;
+		}
+	
+}
+}
+h2{
+	@extend %font;
+}
+ul{
+	list-style: none;
+	margin: 0 auto;
+};
+
+a:hover{
+	color: white;
+}
+div{
+	margin-top: 5px;
+}
+div:last-of-type{
+	background-image: radial-gradient($color4, $color3); 
+	height: 100vh;
+	width: 75%;
+	float: right;
+	display: inline-block;
+	padding: 10px;
+	@extend %borders;
+	border-radius: 0 10px 10px 0;
+	border-left: 0;
+	img{
+		border-radius: 5px;
+		box-shadow: 3px 3px;
+	}
+	
+}
+/*
+@function addMe($x, $y){
+	@return $x + $y;
+}
+
+section{
+	background-color: hsla(30, 70%, 50%, 1);
+	border-width: 10px 5px addMe(5px, 10px) 10px;
+	border-style: solid;
+	border: black;
+}
+*/

@@ -1,0 +1,136 @@
+%clearfix{
+	content: "";
+	display: block;
+	clear: both;
+}
+%rotate-before{
+	position: relative;
+}
+%rotate{
+	margin: 0;
+	transform: rotate(-90deg);
+	transform-origin: top right;
+	top: 0;
+	right: 100%
+	
+	
+}
+// start of style
+body{
+	background-color: lightgrey;
+	width: 80%;
+	margin: 0 auto;}
+section{
+}
+ul{ 
+	list-style: none;
+	margin-left: 0;
+	padding: 0 0 0 30px;
+}
+h2{
+	text-align: center;
+	background-color: teal;
+	margin: 0;
+	white-space: nowrap;
+	padding: 0 20px;
+}
+header{
+	height: 25%;
+	h1{
+		width: 50%;
+		float: left;
+	}
+	address{
+		width: 50%;
+		float: left;
+	}
+}
+#jobs{
+	
+	
+	ul{
+		&::before,&::after{
+		@extend %clearfix;
+		}
+		li{
+			display: inline-block;
+			float: left;
+		}
+	}
+}
+section:first-of-type{
+		height: 25%;
+	div{
+		position: relative;
+		
+		h2{
+			@extend %rotate;
+
+		}
+		
+		ul{
+			&::before,&::after{
+			@extend %clearfix;
+			}
+			margin: 0;
+			
+		}
+	}
+}
+section:nth-of-type(2){
+	height: 25%;
+	div:first-of-type{
+		width: 33%;
+		float: left;
+		@extend %rotate-before;
+	}
+	
+	#pro{
+	@extend %rotate;
+	}	
+		
+	
+	div:nth-of-type(2){
+		width: 33%;
+		float: left;
+		@extend %rotate-before;
+	}
+	&::before,&::after{
+		@extend %clearfix;
+		}	
+	#tech{
+	@extend %rotate;
+	}
+	#aa{
+		width: 33%;
+		float: right;
+	}
+}
+#acc{
+	width: 100%;
+	float: left;
+	display: inline-block;
+}
+#ass{
+	width: 100%;
+	float: left;
+	display: inline-block;
+}
+section:last-of-type{
+	@extend %clearfix;
+	height: 25%;
+	
+	div:first-of-type{
+		&::before,&::after{
+		@extend %clearfix;
+		}
+		
+		width: 50%;
+		float:left;
+	}
+	div:last-of-type{
+		width: 50%;
+		float: right;
+
+	}
+}	
