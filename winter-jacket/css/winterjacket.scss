@@ -1,0 +1,198 @@
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+$green: #1BBE68;
+$white: hsla(0,0%,91%,1);
+$black: hsla(0,0%,8%,1);
+$red: hsla(358,79%,45%,1);
+
+%clearfix{
+	content: "";
+	display: block;
+	clear: both;
+	}
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+section{
+	padding: 150px 200px
+}
+h3{
+	font-size: 30px;
+	font-weight: 100;
+	margin: 0;
+}
+#hero{
+	background-image: url("../img/page-1_img01.jpg");
+	background-size: cover;
+	color: $white;
+	margin: 0;
+	
+	#content{
+		padding: 200px;
+	}
+
+	h1,h2{
+		margin: 0;
+	}
+	
+	header{
+		&::before,&::after{
+			@extend %clearfix;
+		}
+		background-color: transparentize($black, .15);
+		font-size: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		color: #E8E8E8;
+		
+		div{
+			&::before,&::after{
+				@extend %clearfix;
+			}
+			margin: 0 auto;
+			width: 300px;
+			img{
+				float: left;
+				display: inline-block;
+			}
+			h2{
+				float: left;
+				padding-left: 5px;
+				margin-top: 5px;
+				
+
+				
+			}
+			strong{
+			color: white;
+			}
+		}	
+	}
+	#content{
+		div{
+			&:before,&:after{
+				@extend %clearfix;
+			}
+			img{
+				float: left;
+				width: 30%;
+			}
+			div{
+				float: left;
+				width: 70%;	
+				h1{
+					font-size: 70px;
+					padding: 0;
+					margin: 0;
+					
+				}
+				h2{
+				
+				}
+			}
+		}
+		ul{
+			float: left;
+			width: 50%;
+		}
+		button{
+			background-color:$red;
+			border: none;
+			text-align: center;
+			float: right;
+			padding: 20px;
+			width: 300px;
+			height: 80px;
+			color: white;
+			font-size: 35px;
+
+			&:hover{
+				background-color: green;	
+			}
+
+		}
+	}	
+}
+#product{
+	padding: 200px;
+	&::before,&::after{
+		@extend %clearfix;
+	}
+	background-color: $green;
+	text-align: center;
+	color: white;
+	
+	img, div {
+		width: 50%;
+		float: left;
+	}
+	div{
+		padding-left: 10px;
+	}
+}
+#about{
+		
+	&::before,&::after{
+		@extend %clearfix;
+	}
+	text-align: center;
+		
+	img, div {
+		width: 50%;
+		float: left;
+	}
+	div{
+		padding-right: 10px;
+	}
+
+}
+#design{
+	background-image: url("../img/page-1_slide02.jpg");
+	background-size: cover;
+	padding: 150px 0;
+	div{
+		background-color: transparentize($white, .5);
+		padding: 0 10px;
+		h3{
+			margin: 
+		}
+	}
+}
+#faq{
+	ul{
+		li{
+		width: 50%;
+		float: left;
+		color: $green;
+		}
+	}
+}
+#gallery{
+
+	.group{
+		width: 300px;
+
+		& div:first-of-type{
+			width: 150px;
+
+		}
+	}
+}		
+footer{
+	background-color: $black;
+	margin: 0;
+	color: white;
+	text-align: center;
+	padding: 40px;
+	h3, address, div{
+	margin: 20px;
+	}
+	div:first-of-type{
+		a{color: $green}
+	}
+	div:last-of-type{
+		a{color:inherit;}
+	}
+}
