@@ -11,12 +11,14 @@ $red: hsla(358,79%,45%,1);
 	display: block;
 	clear: both;
 	}
+
 body{
 	margin: 0;
 	font-family: sans-serif;
-}
+	width: 100%}
 section{
-	padding: 150px 200px
+	padding: 100px
+
 }
 h3{
 	font-size: 30px;
@@ -29,12 +31,18 @@ h3{
 	color: $white;
 	margin: 0;
 	
-	#content{
-		padding: 200px;
+	img{
+		float: left;
 	}
 
+	#hurrta{
+		float: left;
+		
+	}
 	h1,h2{
 		margin: 0;
+
+
 	}
 	
 	header{
@@ -61,16 +69,18 @@ h3{
 				float: left;
 				padding-left: 5px;
 				margin-top: 5px;
-				
-
-				
 			}
 			strong{
 			color: white;
 			}
 		}	
 	}
+	
 	#content{
+		&:before,&:after{
+				@extend %clearfix;
+			}
+			padding: 45px;
 		div{
 			&:before,&:after{
 				@extend %clearfix;
@@ -81,7 +91,7 @@ h3{
 			}
 			div{
 				float: left;
-				width: 70%;	
+				
 				h1{
 					font-size: 70px;
 					padding: 0;
@@ -95,7 +105,7 @@ h3{
 		}
 		ul{
 			float: left;
-			width: 50%;
+			width: 100%;
 		}
 		button{
 			background-color:$red;
@@ -107,9 +117,14 @@ h3{
 			height: 80px;
 			color: white;
 			font-size: 35px;
+			transition: all 500ms ease-in-out;
+			
+
 
 			&:hover{
-				background-color: green;	
+				background-color: green;
+				transform: scale(1.2) rotate(180deg);
+				border-radius: 50%;	
 			}
 
 		}
@@ -133,7 +148,6 @@ h3{
 	}
 }
 #about{
-		
 	&::before,&::after{
 		@extend %clearfix;
 	}
@@ -151,7 +165,6 @@ h3{
 #design{
 	background-image: url("../img/page-1_slide02.jpg");
 	background-size: cover;
-	padding: 150px 0;
 	div{
 		background-color: transparentize($white, .5);
 		padding: 0 10px;
@@ -161,7 +174,11 @@ h3{
 	}
 }
 #faq{
+	&::before,&::after{
+		@extend %clearfix;}
 	ul{
+		&::before,&::after{
+		@extend %clearfix;}
 		li{
 		width: 50%;
 		float: left;
@@ -170,29 +187,130 @@ h3{
 	}
 }
 #gallery{
+	&::before,&::after{
+		@extend %clearfix;
+		}
 
+	
 	.group{
-		width: 300px;
+		&::before,&::after{
+		@extend %clearfix;}
+		width: 25%;
+		float: left;
+		div{
+			float: left;
+			overflow: hidden;
+			background-color: black;
 
-		& div:first-of-type{
-			width: 150px;
+			
+		}	
+			&:hover:before{
+				content: "";
+				display: block;
+				width: 50px;
+				height: 50px;
+				
+				background-color: $green;
+				border-radius: 50%;
+				position: absolute;
+				z-index: 100;
+				pointer-events: none;
+				margin-top: -25px;
+				margin-left:-25px;
+				top: 50%;
+				left: 50%;
+			}
+		
+		/*
+		a:before{
+			content: "";
+			display: block;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: $green;
+			position: absolute;
+		}*/
+		img{
+			float: left;
+			transition: all 200ms ease-in-out;
+			
+			&:hover{
+		transform: scale(1.50);
+		opacity: .5;
+		
+				}
+			
+		}	
+	}	
+
+	a{
+		&::before,&::after{
+		@extend %clearfix;}
+	}
+	
+	.group:nth-child(1){
+		div{
+			width: 50%;
+			}
+	}
+	
+	.group:nth-child(3){
+		
+		div{
+		width: 50%;
+		}
+		div:first-of-type{
+			width: 100%;
+		}
+	}
+	
+	.group:nth-child(4){
+		div{
+			width: 50%;
+		}
+		div:last-of-type {
+			width: 100%;
 
 		}
 	}
-}		
+}
+	
 footer{
 	background-color: $black;
 	margin: 0;
 	color: white;
 	text-align: center;
 	padding: 40px;
+	
 	h3, address, div{
 	margin: 20px;
 	}
 	div:first-of-type{
-		a{color: $green}
+		a{
+			color: $green;
+		}
 	}
 	div:last-of-type{
-		a{color:inherit;}
+		a{
+			color:inherit;
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	#gallery .group{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 450px){
+	#faq{
+		ul{
+			width: 100%;
+		}
+	}	
+	#gallery{	
+		.group{
+		width: 100%;
+		}
 	}
 }

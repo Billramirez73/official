@@ -1,0 +1,123 @@
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+%clearfix{
+	content: "";
+	display: block;
+	clear: both;
+	}
+body{
+	text-align: center;
+}
+ul{
+	list-style: none;
+}	
+li{
+	padding-bottom: 10px;
+
+}
+
+section:first-of-type{
+	background-image: url(../img/camping.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 100px 0;
+	border-radius: 15px;
+	
+
+	div{
+		background-color: hsla(0, 100%, 100%, .5);
+		h1{
+			font-size: 70px;
+			padding: 10px;
+		}
+	}
+	ul{
+		color: white;
+		li{
+			font-size: 35px;
+			display: inline-block;
+			padding: 5px;
+
+		}
+	}
+}
+section:nth-of-type(2){
+	width: 33%;
+	float: left;
+	padding-bottom: 10px;
+	
+	
+	
+	&:before,&:after{
+	@extend %clearfix;
+	}
+	
+	h6{
+		font-size: 30px;
+		padding: 10px;
+		color: white;
+
+	}
+
+	div{
+		background-color: red;
+		width: 50%;
+		height: 50%;
+		float: left;
+		
+
+	}
+	div:first-of-type{
+		background-image: url(../img/rain.jpg);
+		background-size: cover;
+		border-top-left-radius: 10px;
+	}
+	div:nth-of-type(2){
+	background-image: url(../img/wind.jpg);
+	background-size: cover;
+	border-top-right-radius: 10px
+
+	}
+	div:nth-of-type(3){
+	background-image: url(../img/mud.jpg);
+	background-size: cover;
+	border-bottom-left-radius: 10px;
+	
+
+	}
+	div:last-of-type{
+		background-image: url(../img/setup.jpg);
+		background-size: cover;
+		border-bottom-right-radius: 10px;
+
+	}
+
+}
+section:nth-of-type(3){
+	width: 33%;
+	float: left;
+	height: 415px;
+	div{
+		width: 50%;
+		float: left;
+		img{
+			height: 80px;
+			margin: 27px;
+			display: inline-block;
+		}
+		li{
+			padding-top: 10px;
+			font-size: 30px;
+
+		}
+	}
+}
+section:last-of-type{
+	width: 33%;
+	float: left;
+	
+	
+}
+

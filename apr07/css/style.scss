@@ -1,0 +1,78 @@
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+%clearfix{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+//css begin
+body{
+
+}
+body, h1, h2, h3 ul, section{
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+header{
+	background-color: grey;
+	nav{
+		&::before,&::after{
+			@extend %clearfix;
+		}
+		
+		background-color: white;
+		
+		> a{
+			background-image: url(../img/th_360.png);
+			background-size: cover;
+			display: block;
+			width: 75px;
+			height: 75px;
+			float: left;
+			text-indent: -9999px;
+		}
+		
+		ul{
+			float: right;
+			
+			li{
+				display: inline-block;
+				padding-right: 15px;
+				
+				a{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	#hero{
+		background-image: url(../img/download.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-attachment: fixed;
+		padding: 20px;
+		color: white;
+	}
+}
+section:first-of-type{
+	background-color: #688BC1;
+}
+section:nth-of-type(2){
+	background-color: #6C7DA2;
+}
+section:last-of-type{
+	background-image: url(../img/ski.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+}
+footer{
+	background-color: black;
+	color: white;
+}
