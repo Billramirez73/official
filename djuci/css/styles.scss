@@ -7,8 +7,6 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
-
-
 }
 body{
     background-color: hsla(0, 10%, 90%, 1);
@@ -41,11 +39,8 @@ a{
     font-weight: bolder;
 }
 header{
-    // flex: none;
-    // display: flex;
     background-color: black;
     width: 100%;
-    // align-items: center;
     #utilnav{
         width: 80%;
         display: flex;
@@ -85,7 +80,7 @@ nav{
             justify-content: center;
             height: 175px;
             width: 175px;
-            background-color: black;
+            background-color:#43caca;
 
             &:nth-of-type(2){
                 background-color: #5abb49;
@@ -102,16 +97,14 @@ nav{
         }
     }
 }
-#hero{
+.hero{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-image: url(../img/slider-img1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-
     color: white;
     h2{
         font-size: 1000%;
@@ -122,21 +115,152 @@ nav{
         font-size: 500%;
         margin-top: -150px;
         font-weight: lighter;
-
     }
 }
-#whatwedo{
+#one{
+    background-image: url(../img/slider-img1.jpg);
+}
+#two{
+    background-image: url(../img/parallax-img-1.jpg);
+    text-align: center;
+    line-height: .75;
+    h3{
+        margin-top: 5px;
+    }
+}
+.whatwedo{
     display: flex;
+    justify-content: space-around;
     height: 414px;
     div{
-        width: 50%;
+        width: 47%;
         background-color: white;
-
         img{
              width: 100%; 
         }
     }
-    div:first-of-type{
+    div{
         padding: 10px;
-    } 
+        text-align: center;
+        line-height: 1.5;
+        h3{
+            font-size: 50px;
+            margin: 10px 0;
+            font-weight: lighter;
+            color: hsla(0, 0%, 20%, 1);
+        }
+    }
+    #differance{
+        background-color: #f34c49;
+        color: white;
+        h3{
+        color: white;
+        line-height: 1;
+        padding: 25px 15px;
+        font-weight: bold;
+        }    
+    }
+} 
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 310px;
+    color: white;
+    div{
+        padding: 10px;
+        width: 30%;
+        height: 300px;
+        text-align: center;
+        h3{
+            font-size:  45px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+            margin: 0;
+        }
+    }
+    #blue{
+        background-color: #43caca;
+    }
+    #green{
+        background-color: #5abb49;
+    }
+    #orange{
+        background-color: #f7b40e;
+    }
+   .person{
+        background-color: white;
+        color: grey;
+        height: 350px;
+        margin-top: 150px;
+
+        img{
+            border-radius: 50%;
+        }
+        h5{
+            color: #b2398a;
+            font-size: 15px;
+        }
+    }
+} 
+#eightpack{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #5abb49;
+    height: 550px;  
+    margin-top: 150px;
+    div{
+        flex: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            width: 250px;
+            img{
+                width: 100%;
+            }
+        }
+        #projects{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f7b40e;
+            height: 250px;
+        }
+    }
 }
+#fourup{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .row{
+        display: flex;
+        justify-content: space-around;
+        div{
+            width: 45%;
+            background-color: #ffffff;
+            text-align: center;
+            h2{
+                color: #b2398a;
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    background-color: black;
+    section{
+        display: flex;
+        justify-content: space-around;
+    }
+    #map-canvas {
+        width: 500px;
+        height: 400px;
+        background-color: #CCC;
+      }
+}
+       

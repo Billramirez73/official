@@ -5,6 +5,21 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="https://maps.googleapis.com/maps/api/js"
+	</script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 <body>
@@ -27,113 +42,130 @@
 			<li><a href="#">Contacts</a></li>
 		</ul>
 	</nav>	
-	<section id="hero">	
+	<section class="hero" id="one">	
 		<h2>Creating</h2>
 		<h3>Something special for you</h3>
 	</section>
-	<section id="whatwedo">
+	<section class="whatwedo">
 		<div>
 			<h3>What we do</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error in soluta quidem, reiciendis voluptate sunt ad eius sit, sapiente repellat consectetur officiis harum assumenda porro tenetur! Ipsa laboriosam aliquid eaque!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error in soluta quidem, reiciendis voluptate sunt ad eius sit, sapiente repellat consectetur officiis harum assumenda porro tenetur! Ipsa laboriosam aliquid eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, temporibus, ducimus. Voluptatum expedita soluta odit dolore at temporibus, modi id officiis, magnam eos, quidem asperiores voluptas culpa aut nam deleniti.</p>
 		</div>	
 		
 		<div>
 			<img src="img/page1_1.jpg" alt="">
 		</div>
 	</section>
-	<section id="boxes">
-		<div>
+	<section class="boxes">
+		<div id="blue">
+			<img src="img/icon1.png" alt="" >
 			<h3>quick installs</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestias, et nostrum harum ab, doloremque aspernatur voluptas nihil magni ut laudantium, omnis consectetur ullam sint voluptates distinctio nesciunt vitae esse.</p>
 		</div>
-		<div>
+		<div id="green">
+			<img src="img/icon2.png"  alt="">
 			<h3>support</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam aliquam quisquam cum possimus expedita, vitae quae quibusdam soluta nesciunt, explicabo sint odit est temporibus placeat eos sequi in provident. Incidunt.</p>
 		</div>
-		<div>
+		<div id="orange">
+			<img src="img/icon3.png" alt="">
 			<h3>Custimizable</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni, doloremque? Doloribus pariatur autem blanditiis quas iure, doloremque distinctio esse consequuntur debitis iste eius molestiae tenetur voluptates quasi, dolore, at?</p>
 		</div>
 	</section>
-	<section>
+	<section class="whatwedo">
 		<div>
-			<img src="img/page1_2.jpg" height="780" width="1170" alt="">
+			<img src="img/page1_2.jpg" alt="">
 		</div>
-		<div>
-			<h3>let	us make a differance in your web design</h3>
+		<div id="differance">
+			<h3>Let	us make a differance in your web design</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde, assumenda voluptates. Id vel velit, expedita quae labore distinctio, quo maxime nam aperiam minima numquam quis cum illo totam fugit.</p>
 		</div>
 	</section>
-	<section>
+	<section class="hero" id="two">
 		<h2>24/7 Customer service</h2>
-		<h4>supported by professionals</h4>
+		<h3>supported by professionals</h3>
 	</section>
-	<section>
-		<div>
-			<img src="img/person-1.jpg" height="150" width="150" alt="">
+	<section class="boxes">
+		<div class="person">
+			<img src="img/person-1.jpg"  alt="">
 			<h5>Lorem ipsum dolor sit amet</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error consequatur tenetur, illo praesentium maiores sint eligendi ipsam, eos officia, voluptas maxime at perspiciatis cum? Asperiores blanditiis delectus aliquam, quidem impedit.</p>
-		<div>
-			<img src="img/person-2.jpg" height="150" width="150" alt="">
+		</div>
+		<div class="person">
+			<img src="img/person-2.jpg" w alt="">
 			<h5>Lopsa id est porro exercitationem.</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio natus illo. Culpa illo, doloremque, earum sint possimus iure! Deleniti necessitatibus labore voluptate rem at unde rerum totam, sapiente illum!</p>
 		</div>
-		<div>
-			<img src="img/person-3.jpg" height="150" width="150" alt="">
+		<div class="person">
+			<img src="img/person-3.jpg" width="158" alt="">
 			<h5> consectetur adipisicing elit. Commodi voluptatem,</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsa consequuntur, illo. Maxime quia, laboriosam ullam voluptatibus unde autem odit corporis nulla quae iure numquam? Eaque laudantium quis in, reiciendis.</p>
 		</div>
 	</section>
-	<section>
-		<div><a href="#"><img src="img/1.jpg"></a></div>
-		<div><a href="#"><img src="img/2.jpg"></a></div>
-		<div><a href="#"><img src="img/3.jpg"></a></div>
-		<div><a href="#"><img src="img/4.jpg"></a></div>
-		<div><a href="#"><img src="img/5.jpg"></a></div>
-		<div><a href="#"><img src="img/6.jpg"></a></div>
-		<div><a href="#"><img src="img/7.jpg"></a</div>
-		<div><a href="#">see all projects</a></div>
+	<section id="eightpack">
+		<div class="row-one">
+			<a href="#"><img src="img/1.jpg"></a>
+			<a href="#"><img src="img/2.jpg"></a>
+			<a href="#"><img src="img/3.jpg"></a>
+			<a href="#"><img src="img/4.jpg"></a>
+		</div>
+		<div class="row-two">
+			<a href="#"><img src="img/5.jpg"></a>
+			<a href="#"><img src="img/6.jpg"></a>
+			<a href="#"><img src="img/7.jpg"></a>
+			<a href="#" id="projects">see all projects</a>
+		</div>
 	</section>
-	<section>
-		<div>
-		<h2>27th <spanMAy></span></h2>
-		<h3>Lconsectetur adipisicing elit.</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque perferendis minima enim molestiae officiis nesciunt dicta optio modi consectetur, earum eveniet iusto consequuntur atque, corporis impedit unde quis. Magni, voluptate!</p>
+	<section id="fourup" > 
+		<div class="row">
+			<div >
+			<h2>27th <span>May</span></h2>
+			<h3>Lconsectetur adipisicing elit.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque perferendis minima enim molestiae officiis nesciunt dicta optio modi consectetur, earum eveniet iusto consequuntur atque, corporis impedit unde quis. Magni, voluptate!</p>
+			</div>
+			<div><img src="img/calender.jpg"></div>
 		</div>
-		<div><img src="img/calender.jpg"></div>
-		<div>
-			<img src="img/snow.jpg">
-		</div>
-		<div>
-			<h2>14th <span>March</span></h2>
-			<h3>adipisicing elit. Nihil sapiente maiores</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam non voluptate ea odio, labore ipsam hic, velit consequuntur culpa similique numquam aliquid alias dicta, perferendis quis officiis veritatis, nostrum perspiciatis!</p>
-		</div>	
+		<div class="row">
+			<div>
+				<img src="img/snow.jpg">
+			</div>
+			<div >
+				<h2>14th <span>March</span></h2>
+				<h3>adipisicing elit. Nihil sapiente maiores</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam non voluptate ea odio, labore ipsam hic, velit consequuntur culpa similique numquam aliquid alias dicta, perferendis quis officiis veritatis, nostrum perspiciatis!</p>
+			</div>	
+		</div>		
 	</section>
 	<footer>
-		<div>
-			<h3>About</h3>
-			<ul>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Conse ctetur adipisicing</li>
-				<li>Elit sed do eiusmod tempor</li>	
-				<li>Incididunt ut labore</li>
-				<li>Et dolore magna aliqua</li>
-				<li>Ut enim ad minim veniam</li>
-				<li>Quis nostrud exercitat></li>
-			</ul>
-		</div>
-		<div>	
-			<h3>Services</h3>
-			<ul>
-				<li>Quis nostrud exercitat</li>
-				<li>Ut enim ad minim veniam</li>
-				<li>Et dolore magna aliqua</li>
-				<li>Incididunt ut labore</li>
-				<li>Elit sed do eiusmod tempor</li>
-				<li>Conse ctetur adipisicing</li>
-			</ul>
-		</div>			
+		<section>			
+			<div>
+				<h3>About</h3>
+				<ul>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Conse ctetur adipisicing</li>
+					<li>Elit sed do eiusmod tempor</li>	
+					<li>Incididunt ut labore</li>
+					<li>Et dolore magna aliqua</li>
+					<li>Ut enim ad minim veniam</li>
+					<li>Quis nostrud exercitat></li>
+				</ul>
+			</div>
+			<div>	
+				<h3>Services</h3>
+				<ul>
+					<li>Quis nostrud exercitat</li>
+					<li>Ut enim ad minim veniam</li>
+					<li>Et dolore magna aliqua</li>
+					<li>Incididunt ut labore</li>
+					<li>Elit sed do eiusmod tempor</li>
+					<li>Conse ctetur adipisicing</li>
+				</ul>
+			</div>
+			<div>
+				<div id="map-canvas"></div>
+			</div>
+		</section>	
 	</footer>
 </body>
 </html>
