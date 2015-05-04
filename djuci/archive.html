@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Djuci</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js"
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(36.742575, -119.795542),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <ul id="utilnav">
+                <li><i class="fa fa-map-marker"></i>4578 Marmora Road, glasgow D04 89GR</li>
+                <li><i class="fa fa-mobile"></i>800-2345-6789</li>
+                <li><i class="fa fa-envelope-o"></i>info@demolink.org</li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-facebook"></i></li>
+            </ul>
+        </section>      
+    </header>
+    <section id="nav-colors">
+        <div id="djuci">
+            <img src="img/logo.png"alt="">
+        </div>
+        <div id="colors">
+            <ul>
+                <li class="nav-list">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown nav-list" id="about-nav">
+                    <a href="#">About</a>
+                    <ul class="items">
+                        <li class="d-list"><a href="testimonial.html">Testimonials</a></li>
+                        <li class="d-list"><a href="archive.html.html">Archive</a></li>
+                        <li class="d-list"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-list" id="port">
+                    <a href="3">Portfolio</a>
+                    <ul class="items">
+                        <li class="d-list"><a href="portfolio.html">Portfolio 2</a></li>
+                        <li class="d-list"><a href="portfolio.html" >Portfolio 3</a>
+
+                        </li>
+                        <li class="d-list"><a href="portfolio.html">Portfolio 4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="nav-list">
+                <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </div>  
+    </section>
+    <div id="page-title">   
+        <h1>Archive</h1>
+    </div>
+    <section id="testimonials">
+        <nav>
+            
+            <div>
+                <a href="index.html">Home//</a>
+                <a href="#">About//</a>
+                <a href="archive.html">Archive</a>
+            </div>  
+        </nav>  
+    </section>
+    <section id="quotes">
+    <div id="fix">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo architecto expedita recusandae a quaerat aliquid et quis nemo eius aut error unde voluptate odio minus, veritatis laudantium nesciunt sequi quae. elit. Ipsam eius accusantium hic enim mollitia cum minima nisi vitae! Ut exercitationem illo libero voluptatem, hic. Amet illo enim, laboriosam veniam aliquid.</p>
+            </div>
+        <div id="container">
+             <div id="lists">
+                <div>
+                    <h2>Last 30 Posts</h2>
+                    <ul>
+                        <li><i class="fa fa-check"></i>Excepteur sint occaecat</li>
+                        <li><i class="fa fa-check"></i>Voluptate velit esse cillum dolore</li>
+                        <li><i class="fa fa-check"></i>Donec tempor libero</li>
+                        <li><i class="fa fa-check"></i>Etiam dictum egestas</li>
+                        <li><i class="fa fa-check"></i>Phasellus fringilla</li>
+                        <li><i class="fa fa-check"></i>Vivamus vel sem at</li>
+                        <li><i class="fa fa-check"></i>Etiam commodo convallis/li>
+                        <li><i class="fa fa-check"></i>Lorem ipsum dolor sit</li>
+                        <li><i class="fa fa-check"></i>Vimeo Video</li>
+                        <li><i class="fa fa-check"></i>YouTube Video</li>
+                        <li><i class="fa fa-check"></i>Video post type</li>
+                        <li><i class="fa fa-check"></i>Audio post format</li>
+                        <li><i class="fa fa-check"></i>Gallery post format</li>
+                        <li><i class="fa fa-check"></i>Image format post</li>
+                        <li><i class="fa fa-check"></i>Quote post format</li>
+                        <li><i class="fa fa-check"></i>Link post format</li>
+                        <li><i class="fa fa-check"></i>Aside post</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Archives by Month:</h2>
+                    <ul>
+                        <li><i class="fa fa-check"></i>May 2014</li>
+                        <li><i class="fa fa-check"></i>March 2014</li>
+                        <li><i class="fa fa-check"></i>Feburary 2014</li>
+                        <li><i class="fa fa-check"></i>Janurary 2014</li>
+                        <li><i class="fa fa-check"></i>December 2013</li>
+                        <li><i class="fa fa-check"></i>November 2013</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Archives by Subject:</h2>
+                    <ul>
+                        <li><i class="fa fa-check"></i>coding</li>
+                        <li><i class="fa fa-check"></i>css3</li>
+                        <li><i class="fa fa-check"></i>HTML5</li>
+                        <li><i class="fa fa-check"></i>Uncatergorized</li>
+                        <li><i class="fa fa-check"></i>Webdesign</li>
+                    </ul>
+                </div>
+            </div>
+       
+     
+        <div id="right">
+            <div id="archives">
+                <h3>Archives</h3>
+                <ul>
+                <li>May 2014</li>
+                <li>March 2014</li>
+                <li>Feburary 2014</li>
+                <li>Janurary 2014</li>
+                <li>December 2013</li>
+                <li>November 2013</li>
+                </ul>
+            </div>
+            <div id="categoies">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Coding</li>
+                    <li>CSS3</li>
+                    <li>HTML5</li>
+                    <li>Uncategorized</li>
+                    <li>Web Design</li>
+                </ul>
+            </div>
+            <div id="recent">
+            <h3>Recent Post</h3>
+                <div class="date">
+                    <img src="img/blog-img1-100x100.jpg" alt="">
+                    <div class="date">
+                        <h5>March 2014</h5>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum labore,,</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <img src="img/blog-img2-100x100.jpg" alt="">
+                    <div>
+                        <h5>May 2014</h5>
+                        <h4>Lorem ipsum dolor sit amet.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit,</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <img src="img/Depositphotos_11184173_original-Copy-100x100.jpg" alt="">
+                    <div>
+                        <h5>March 2015</h5>
+                        <h4>Lorem ipsum dolor sit amet elit. </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corporis beatae iste eligendi alias, dolores, </p>
+                    </div>
+                </div>
+             </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    
+    <footer>
+        <section>           
+            <div>
+                <h3>About</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Conse ctetur adipisicing</li>
+                    <li>Elit sed do eiusmod tempor</li> 
+                    <li>Incididunt ut labore</li>
+                    <li>Et dolore magna aliqua</li>
+                    <li>Ut enim ad minim veniam</li>
+                    <li>Quis nostrud exercitat</li>
+                </ul>
+            </div>
+            <div>   
+                <h3>Services</h3>
+                <ul>
+                    <li>Quis nostrud exercitat</li>
+                    <li>Ut enim ad minim veniam</li>
+                    <li>Et dolore magna aliqua</li>
+                    <li>Incididunt ut labore</li>
+                    <li>Elit sed do eiusmod tempor</li>
+                    <li>Conse ctetur adipisicing</li>
+                </ul>
+            </div>
+            <div>
+                <div id="map-canvas"></div>
+            </div>
+        </section>
+        <section id="bottom">
+            <p>Djuci © 2015. Privacy Policy</p>
+        </section>  
+    </footer>
+</body>
+</html>

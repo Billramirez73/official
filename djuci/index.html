@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Djuci</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<script src="https://maps.googleapis.com/maps/api/js"
@@ -12,8 +12,8 @@
       function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
+          center: new google.maps.LatLng(36.742575, -119.795542),
+          zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
@@ -24,34 +24,66 @@
 
 <body>
 	<header>
-		<ul id="utilnav">
-			<li><i class="fa fa-map-marker"></i>4578 Marmora Road, glasgow D04 89GR</li>
-			<li><i class="fa fa-mobile"></i>800-2345-6789</li>
-			<li><i class="fa fa-envelope-o"></i>info@demolink.org</li>
-			<li><i class="fa fa-twitter"></i></li>
-			<li><i class="fa fa-facebook"></i></li>
-		</ul>
+		<section>
+			<ul id="utilnav">
+				<li><i class="fa fa-map-marker"></i>4578 Marmora Road, glasgow D04 89GR</li>
+				<li><i class="fa fa-mobile"></i>800-2345-6789</li>
+				<li><a href="contacts.html" id="email"><i class="fa fa-envelope-o"></i>info@demolink.org</a></li>
+				<li id="twitter"><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+				<li id="facebook"><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+			</ul>
+		</section>		
 	</header>
-	<nav>
-		<div><img src="img/logo.png" height="87" width="186" alt=""></div>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Contacts</a></li>
-		</ul>
-	</nav>	
+	<section id="nav-colors">
+		<div id="djuci">
+			<img src="img/logo.png"alt="">
+		</div>
+		<div id="colors">
+			<ul>
+				<li class="nav-list">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="dropdown nav-list" id="about-nav">
+					<a href="#about">About</a>
+					<ul class="items">
+						<li class="d-list"><a href="testimonial.html">Testimonials</a></li>
+						<li class="d-list"><a href="archive.html">Archive</a></li>
+						<li class="d-list"><a href="faq.html">FAQ</a></li>
+					</ul>
+				</li>
+				<li class="dropdown nav-list" id="port">
+					<a href="#">Portfolio</a>
+					<ul class="items">
+						<li class="d-list"><a href="portfolio.html">Portfolio 2</a></li>
+						<li class="d-list"><a href="portfolio.html" >Portfolio 3</a>
+
+						</li>
+						<li class="d-list"><a href="portfolio.html">Portfolio 4</a></li>
+					</ul>
+				</li>
+				<li class="nav-list">
+					<a href="#eightpack">Blog</a>
+				</li>
+				<li class="nav-list">
+				<a href="contacts.html">Contact</a>
+				</li>
+			</ul>
+
+				<a href="#utilnav" id="home">
+				<i class="fa fa-sort-asc"></i></a>
+
+		</div>	
+	</section>	
 	<section class="hero" id="one">	
 		<h2>Creating</h2>
 		<h3>Something special for you</h3>
 	</section>
-	<section class="whatwedo">
+	<a name="about"></a>
+	<section class="whatwedo" id="about">
 		<div>
-			<h3>What we do</h3>
+			<h3>What We Do?</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error in soluta quidem, reiciendis voluptate sunt ad eius sit, sapiente repellat consectetur officiis harum assumenda porro tenetur! Ipsa laboriosam aliquid eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, temporibus, ducimus. Voluptatum expedita soluta odit dolore at temporibus, modi id officiis, magnam eos, quidem asperiores voluptas culpa aut nam deleniti.</p>
 		</div>	
-		
 		<div>
 			<img src="img/page1_1.jpg" alt="">
 		</div>
@@ -83,7 +115,8 @@
 		</div>
 	</section>
 	<section class="hero" id="two">
-		<h2>24/7 Customer service</h2>
+		<h2>24/7<br>
+		 Customer service</h2>
 		<h3>supported by professionals</h3>
 	</section>
 	<section class="boxes">
@@ -99,35 +132,38 @@
 		</div>
 		<div class="person">
 			<img src="img/person-3.jpg" width="158" alt="">
-			<h5> consectetur adipisicing elit. Commodi voluptatem,</h5>
+			<h5> Consectetur adipisicing elit.</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsa consequuntur, illo. Maxime quia, laboriosam ullam voluptatibus unde autem odit corporis nulla quae iure numquam? Eaque laudantium quis in, reiciendis.</p>
 		</div>
 	</section>
 	<section id="eightpack">
-		<div class="row-one">
-			<a href="#"><img src="img/1.jpg"></a>
-			<a href="#"><img src="img/2.jpg"></a>
-			<a href="#"><img src="img/3.jpg"></a>
-			<a href="#"><img src="img/4.jpg"></a>
-		</div>
-		<div class="row-two">
-			<a href="#"><img src="img/5.jpg"></a>
-			<a href="#"><img src="img/6.jpg"></a>
-			<a href="#"><img src="img/7.jpg"></a>
-			<a href="#" id="projects">see all projects</a>
-		</div>
+		<div id="wrapper">
+			<div class="row-one">
+				<div class="hidden"><a href="#"><img src="img/1.jpg"></a></div>
+				<div class="hidden"><a href="#"><img src="img/2.jpg"></a></div>
+				<div class="hidden"><a href="#"><img src="img/3.jpg"></a></div>
+				<div class="hidden"><a href="#"><img src="img/4.jpg"></a></div>
+			</div>
+			<div class="row-one">
+				<div class="hidden"><a href="#"><img src="img/5.jpg"></a></div>
+				<div class="hidden"><a href="#"><img src="img/6.jpg"></a></div>
+				<div class="hidden"><a href="#"><img src="img/7.jpg"></a></div>
+				<div class="hidden"><a href="archive.html" id="projects">see all projects</a></div>
+			</div>
+		</div>	
 	</section>
+	<a href="#blog"></a>
 	<section id="fourup" > 
 		<div class="row">
-			<div >
+			<div  >
 			<h2>27th <span>May</span></h2>
 			<h3>Lconsectetur adipisicing elit.</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque perferendis minima enim molestiae officiis nesciunt dicta optio modi consectetur, earum eveniet iusto consequuntur atque, corporis impedit unde quis. Magni, voluptate!</p>
 			</div>
-			<div><img src="img/calender.jpg"></div>
+			<div class="hidden"><img src="img/calender.jpg"></div>
 		</div>
 		<div class="row">
-			<div>
+			<div class="hidden">
 				<img src="img/snow.jpg">
 			</div>
 			<div >
@@ -148,7 +184,7 @@
 					<li>Incididunt ut labore</li>
 					<li>Et dolore magna aliqua</li>
 					<li>Ut enim ad minim veniam</li>
-					<li>Quis nostrud exercitat></li>
+					<li>Quis nostrud exercitat</li>
 				</ul>
 			</div>
 			<div>	
@@ -165,6 +201,9 @@
 			<div>
 				<div id="map-canvas"></div>
 			</div>
+		</section>
+		<section id="bottom">
+			<p>Djuci © 2015. Privacy Policy</p>
 		</section>	
 	</footer>
 </body>
