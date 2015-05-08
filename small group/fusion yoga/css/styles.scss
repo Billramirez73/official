@@ -1,0 +1,263 @@
+$red: #E55039;
+$purple: #5E3332;
+$pink: #F4DB9E;
+body{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/bg_pic1.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: $purple;
+}
+a{
+	text-decoration: none;
+}
+p{
+	font-size: .8vw;
+}
+h1, h2, h3, h4, h5{
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+h3{
+	font-family: 'Georgia';
+  	font-size: 20px;
+}
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button{
+	width: 75px;
+	height: 30px;
+	background-color: $red;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-family: 'Tahoma';
+	text-transform: uppercase;
+	}
+// all pages
+nav{
+	display: flex;
+	justify-content:center;
+	background-image: url(../img/header_bg.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	ul{
+		li{
+			display: inline-block;
+			padding: 0 10px;
+			a:nth-of-type(odd){
+				&:hover{
+					color: black;
+				}	
+			}
+		}
+	}
+}
+footer{
+	display: flex;
+	justify-content: center;
+	background-image: url(../img/footer_bg.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.box{		
+	width: 55%;
+	display: flex;
+	background-color: rgb(251, 243, 228);
+	padding: 50px;
+	margin: 100px 0;
+	border-radius: 10px;
+	border: 5px solid rgb(238, 193, 117);
+}
+// home page
+#bottom-pics{
+	height: 100vh;
+	justify-content: center;
+	align-items: flex-end;
+	div{
+		background-image: linear-gradient(white, $red);
+		border: 5px solid $red;
+		border-radius: 10px;
+		text-align: center;
+		margin: 15px;
+		color: white;
+		h2{
+			&:hover{
+				color: black;
+			}
+		}
+	}
+}
+//about page
+#about{
+	.box{
+		flex-direction: column;
+		.harmony{
+			display: flex;
+			border-bottom: 1px solid lightgrey;
+			padding: 15px;
+			img{
+				flex: 1;
+				padding: 5px;
+			}
+			div{
+				flex: 3;
+			}
+		}
+	}
+	.about-news{
+		display: flex;
+		.about-us{
+			flex: 1;
+			padding: 10px;
+			p:first-of-type{
+				color: $red;
+			}
+		}
+		.latest{
+			flex: 2;
+			.two-up{
+				display: flex;
+				border-left: 1px solid lightgrey;
+				padding-left: 15px;
+				.news{
+					padding: 10px;
+					.row{
+						display: flex;
+						p{
+							color: $red;
+							font-size: .75vw;
+						}
+						.circle{
+							flex: 1;
+							background-image: url(../img/bage1.png);
+							background-repeat: no-repeat;
+							background-position: top center;
+							text-align: center;
+							color: white;
+							padding: 12px 0;
+						}	
+						p{
+							flex: 2;								
+						}
+					}
+				}
+			}
+		}
+	}		
+}
+//services page
+#services{
+	.box{
+		.featured{
+			flex: 2;
+			p:first-of-type{
+				color: $red;
+			}
+			.service-top{
+				display: flex;
+				img{
+					flex: 1;
+				}
+				div{
+					flex: 3;
+				}
+			}
+		}
+		.service-list{
+			flex: 1;
+			ul{
+				list-style: none;
+				margin: 0;
+				li{
+					padding: 7px 0;
+					color: red;
+					&:hover{
+						padding-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+//practice page
+#practice{
+	.box{
+		div{
+			padding: 15px;
+			p:first-of-type{
+				color: $red;
+			}
+		}
+	}
+
+}
+//blog page
+#blog{
+	.box{
+		flex-direction: column;
+		div{
+			display: flex;
+			
+			img{
+				flex: 1;
+			}
+			.work{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				flex: 3;
+				h4{
+					margin-bottom: 15px;
+				}
+				h5{
+					margin-bottom: 25px;
+					color: $red;
+				}
+				p{
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+}
+#contacts{
+	.box{
+		div{
+		 flex: 1;
+		 iframe{
+		 	margin-top: 25px;
+		 }
+   			
+		}
+		.form{
+			display: flex;
+			flex-direction: column;
+			input{
+				width: 60%;
+				margin: 10px 0;
+				background-color: $pink;
+				border: none;
+				padding: 10px;
+				border-radius: 10px;
+				font-family: arial;
+				text-transform: uppercase;
+			}
+			#message{
+				background-color: $pink;
+				border: none;
+				border-radius: 10px;
+				font-family: arial;
+				margin-top: 10px;
+				padding: 10px;
+				text-transform: uppercase;
+			}
+		} 
+	}
+}
